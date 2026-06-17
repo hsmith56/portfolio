@@ -155,6 +155,27 @@ section:nth-child(even) {
   background-color: var(--color-black);
 }
 
+/* Summary Section */
+.summary-card {
+  background-color: var(--color-white);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 3px solid var(--color-gray-300);
+}
+
+.summary-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-left-color: var(--color-black);
+}
+
+.summary-card p {
+  color: var(--color-gray-700);
+  line-height: 1.7;
+}
+
 /* Employment Section */
 .job {
   margin-bottom: 35px;
@@ -284,7 +305,8 @@ section:nth-child(even) {
 }
 
 .skills-list,
-.projects-list {
+.projects-list,
+.professional-focus {
   background-color: var(--color-white);
   padding: 20px;
   border-radius: 5px;
@@ -293,13 +315,15 @@ section:nth-child(even) {
 }
 
 .skills-list:hover,
-.projects-list:hover {
+.projects-list:hover,
+.professional-focus:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .skills-list h3,
-.projects-list h3 {
+.projects-list h3,
+.professional-focus h3 {
   font-size: 1.1rem;
   margin-bottom: 12px;
   color: var(--color-black);
@@ -308,7 +332,8 @@ section:nth-child(even) {
 }
 
 .skills-list h3::after,
-.projects-list h3::after {
+.projects-list h3::after,
+.professional-focus h3::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -318,7 +343,8 @@ section:nth-child(even) {
   background-color: var(--color-gray-400);
 }
 
-.skills-list p {
+.skills-list p,
+.professional-focus p {
   color: var(--color-gray-700);
   line-height: 1.6;
 }
